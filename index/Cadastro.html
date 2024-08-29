@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff Watch | Cadastro </title>
-    <link rel="stylesheet" href="Cadastro.css">
+    <link rel="stylesheet" href="/style/Cadastro.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <div class="logo">
                 <!-- Contêiner para a imagem da logo -->
 
-                <img src="LogoStaffWatch.svg" alt="Logo Staff Watch">
+                <img src="/img/LogoStaffWatch.svg" alt="Logo Staff Watch">
                 <!-- Imagem da logo com o caminho especificado e texto alternativo para acessibilidade -->
             </div>
 
@@ -28,7 +28,7 @@
             <p>com suas informações pessoais</p>
             <!-- Parágrafos que fornecem uma mensagem de introdução -->
 
-            <button class="botao-entrar"><b>Entrar</b></button>
+            <a href="Login.html"><button class="botao-entrar"><b>Entrar</b></button></a>
             <!-- Botão para entrar na página, estilizado com a classe `botao-entrar` e com o texto em negrito -->
         </article>
 
@@ -44,51 +44,42 @@
                 <div class="input-field">
                     <!-- Campo de entrada para o nome -->
 
-                    <input type="text" name="Nome" id="name_input" required="required" autocomplete="off">
+                    <input type="text" name="Nome" id="name_input" required="required" autocomplete="off" placeholder="Nome">
                     <!-- Campo para inserção do nome, configurado como obrigatório e com preenchimento automático desativado -->
 
-                    <span>Nome</span>
-                    <!-- Texto de instrução que aparece sobre o campo quando está vazio -->
                 </div>
 
                 <div class="input-field">
                     <!-- Campo de entrada para o email -->
 
-                    <input type="email" name="Email" id="email_input" required="required" autocomplete="off">
+                    <input type="email" name="Email" id="email_input" required="required" autocomplete="off" placeholder="Email">
                     <!-- Campo para inserção do email, configurado para aceitar apenas emails e obrigatório -->
 
-                    <span>Email</span>
-                    <!-- Texto de instrução que aparece sobre o campo quando está vazio -->
                 </div>
 
                 <div class="input-field">
                     <!-- Campo de entrada para o CNPJ -->
 
-                    <input type="text" name="CNPJ" id="CNPJ_input" required="required" autocomplete="off">
+                    <input type="text" name="CNPJ" id="CNPJ_input" required="required" autocomplete="off" placeholder="CNPJ">
                     <!-- Campo para inserção do CNPJ, configurado como obrigatório e com preenchimento automático desativado -->
 
-                    <span>CNPJ</span>
-                    <!-- Texto de instrução que aparece sobre o campo quando está vazio -->
                 </div>
 
                 <div class="input-field">
                     <!-- Campo de entrada para a senha -->
 
-                    <input type="password" name="Senha" id="senha_input" required="required" autocomplete="off">
+                    <input type="password" name="Senha" id="senha_input" required="required" autocomplete="off" placeholder="Senha">
                     <!-- Campo para inserção da senha, configurado como obrigatório e com preenchimento automático desativado -->
 
-                    <span>Senha</span>
-                    <!-- Texto de instrução que aparece sobre o campo quando está vazio -->
+
                 </div>
 
                 <div class="input-field">
                     <!-- Campo de entrada para confirmar a senha -->
 
-                    <input type="password" name="Confirmar Senha" id="confirm_senha_input" required="required" autocomplete="off">
+                    <input type="password" name="Confirmar Senha" id="confirm_senha_input" required="required" autocomplete="off" placeholder="Confirmar Senha">
                     <!-- Campo para confirmação da senha, configurado como obrigatório e com preenchimento automático desativado -->
 
-                    <span>Confirmar senha</span>
-                    <!-- Texto de instrução que aparece sobre o campo quando está vazio -->
                 </div>
 
                 <button class="botao-cadastrar">Cadastrar</button>
