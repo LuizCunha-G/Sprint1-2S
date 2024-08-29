@@ -4,19 +4,18 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-/*======================================================================================================================*/
-/* Estilos Globais */
-/* Estiliza o corpo da página, centralizando seu conteúdo horizontal e verticalmente na tela */
+
+/* ========================== Estilos Globais ========================== */
+/* Centraliza o conteúdo do corpo da página horizontal e verticalmente */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
-/*================================================   Sessão Principal    ===============================================*/
 
-/* Define a seção principal da página, com um tamanho máximo de largura, altura definida, cor de fundo branca, bordas arredondadas e sombra para criar um efeito de elevação */
+/* ========================== Sessão Principal ========================== */
+/* Define a seção principal da página, com tamanho máximo, cor de fundo, bordas arredondadas e sombra */
 .sessao-inicial {
     display: flex;
     max-width: 1518px;
@@ -25,10 +24,11 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
 }
 
-header{
+/* ========================== Cabeçalho ========================== */
+/* Estiliza o cabeçalho, com fundo claro, sombra e espaçamento dos elementos */
+header {
     display: flex;
     padding: 0;
     position: absolute;
@@ -38,70 +38,64 @@ header{
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 0px 11px rgba(56, 56, 56, 0.644);
-    
-    
 }
 
-.logoTopo{
+/* Estiliza o contêiner do logo no topo */
+.logoTopo {
     display: flex;
-    padding: 10;
-    
     width: 6.5%;
     height: 100%;
     margin-left: -15%;
-    
-
 }
 
-.logoAzul{
+/* Estiliza a logo azul */
+.logoAzul {
     width: 200vw;
     height: 120vh;
-    
 }
 
-.link{
-    
+/* Estiliza a navegação dos links no cabeçalho */
+.link {
     color: #000;
     font-size: 1.3rem;
-    
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-decoration: none;
-
     gap: 1%;
     width: 35%;
     margin-left: -30%;
 }
 
-a{
+/* Estiliza os links no cabeçalho */
+a {
     text-decoration: none;
     color: #000;
 }
 
-a:hover{
+/* Estilo de hover nos links */
+a:hover {
     color: #6096BA;
 }
 
-.user{
+/* Estiliza o ícone de usuário no cabeçalho */
+.user {
     display: flex;
     align-items: center;
     width: auto;
     height: 60%;
     margin-right: -10%;
-
 }
 
-.userIcon{
+/* Tamanho do ícone de usuário */
+.userIcon {
     width: 4vw;
     height: 9vh;
-
 }
 
-.blocoComputador{
+/* ========================== Blocos "Computador" e "Funcionário" ========================== */
+/* Estiliza o bloco "Computador" */
+.blocoComputador {
     display: flex;
-    padding: 0;
     margin: 128px 533px;
     position: absolute;
     width: 11%;
@@ -112,11 +106,11 @@ a:hover{
     align-items: center;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
 }
-.blocoFuncionario{
+
+/* Estiliza o bloco "Funcionário" */
+.blocoFuncionario {
     display: flex;
-    padding: 0;
     margin: 128px 683px;
     position: absolute;
     width: 11%;
@@ -129,7 +123,8 @@ a:hover{
     border-bottom-right-radius: 15px;
 }
 
-/* Bloco do lado esquerdo (SW), com fundo azul escuro, texto na cor clara e configuração de flexbox para alinhar o conteúdo centralizado */
+/* ========================== Bloco SW (lado esquerdo) ========================== */
+/* Estiliza o bloco do lado esquerdo (SW), com fundo azul escuro e conteúdo centralizado */
 .bloco-SW {
     background-color: #002148;
     color: #E7ECEF;
@@ -141,7 +136,7 @@ a:hover{
     align-items: center;
 }
 
-/* Estilo da logo, posicionada e centralizada no bloco */
+/* Estiliza a logo dentro do bloco SW */
 .logo {
     top: -140px;
     height: 30%;
@@ -152,13 +147,13 @@ a:hover{
     margin-bottom: 30px;
 }
 
-/* Estilo das imagens dentro do bloco SW */
+/* Estiliza as imagens dentro do bloco SW */
 .bloco-SW img {
     height: 376px;
     width: 378px;
 }
 
-/* Estilo dos parágrafos dentro do bloco SW, com tamanho de fonte definido, cor de texto cinza claro e centralizado */
+/* Estiliza os parágrafos dentro do bloco SW */
 .bloco-SW p {
     font-size: 24px;
     color: #bebebe;
@@ -166,29 +161,27 @@ a:hover{
     margin-bottom: 2px;
 }
 
-/* Estilo do botão de entrar, com margens e preenchimento definido, bordas arredondadas, cor de fundo transparente e borda clara */
+/* Estiliza o botão "Entrar" dentro do bloco SW */
 .botao-entrar {
     margin-top: 16px;
     padding: 10px 50px;
     background-color: #e7ecef00;
-    color:  #E7ECEF;
+    color: #E7ECEF;
     border: 3px solid #E7ECEF;
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
     left: -300px;
     transition: background-color 0.3s ease;
-    
 }
 
-/* Altera a cor de fundo do botão de entrar ao passar o mouse */
+/* Efeito de hover para o botão "Entrar" */
 .botao-entrar:hover {
     background-color: #CAD5E0;
 }
 
-/*================================================   Sessão Cadastro    ================================================*/
-
-/* Estilo da seção de cadastro, com largura de 50%, preenchimento, cor de fundo cinza claro e centralização do conteúdo */
+/* ========================== Sessão Cadastro (lado direito) ========================== */
+/* Estiliza a seção de cadastro, com largura de 50%, fundo cinza claro e conteúdo centralizado */
 .sessao-cadastro {
     width: 50%;
     padding: 40px;
@@ -198,7 +191,7 @@ a:hover{
     align-items: center;
 }
 
-/* Contêiner do formulário de cadastro, com largura e altura definidas, sombra, bordas arredondadas e cor de fundo clara */
+/* Estiliza o contêiner do formulário de cadastro */
 .form-container {
     margin-top: 15%;
     width: 100%;
@@ -209,6 +202,7 @@ a:hover{
     background-color: #002148;
 }
 
+/* Estiliza o título do formulário */
 h1 {
     font-size: 24px;
     color: #E7ECEF;
@@ -216,6 +210,7 @@ h1 {
     text-align: center;
 }
 
+/* Estiliza os campos de entrada do formulário */
 .input-field {
     margin-bottom: 30px;
     position: relative;
@@ -223,6 +218,7 @@ h1 {
     width: 100%;
 }
 
+/* Estiliza as caixas de entrada */
 .input-field input {
     width: 100%;
     padding: 10px;
@@ -235,6 +231,7 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+/* Estiliza as labels flutuantes dentro dos campos de entrada */
 .input-field span {
     position: absolute;
     left: 10px;
@@ -246,6 +243,7 @@ h1 {
     pointer-events: none;
 }
 
+/* Efeito para mover a label flutuante ao focar ou preencher o campo */
 .input-field input:focus + span,
 .input-field input:valid + span {
     top: 0%;
@@ -257,6 +255,7 @@ h1 {
     border: 2px solid #002148;
 }
 
+/* Estiliza o botão "Cadastrar" */
 .botao-cadastrar {
     width: 100%;
     padding: 10px;
@@ -269,6 +268,7 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+/* Efeito de hover para o botão "Cadastrar" */
 .botao-cadastrar:hover {
     background-color: #CAD5E0;
 }

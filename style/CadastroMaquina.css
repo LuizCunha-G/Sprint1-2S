@@ -1,3 +1,4 @@
+/* Reseta margens, preenchimentos e define box-sizing global */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Estiliza o corpo da página */
 body {
     display: flex;
     justify-content: center;
@@ -12,6 +14,7 @@ body {
     height: 100vh;
 }
 
+/* Estiliza a sessão inicial */
 .sessao-inicial {
     display: flex;
     max-width: 1518px;
@@ -22,6 +25,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estiliza o cabeçalho */
 header {
     display: flex;
     padding: 0;
@@ -34,6 +38,7 @@ header {
     box-shadow: 0px 0px 11px rgba(56, 56, 56, 0.644);
 }
 
+/* Estiliza o logo no cabeçalho */
 .logoTopo {
     display: flex;
     width: 6.5%;
@@ -41,11 +46,13 @@ header {
     margin-left: -15%;
 }
 
+/* Estiliza a logo azul */
 .logoAzul {
     width: 200vw;
     height: 120vh;
 }
 
+/* Estiliza os links no cabeçalho */
 .link {
     color: #000;
     font-size: 1.3rem;
@@ -67,6 +74,7 @@ a:hover {
     color: #6096BA;
 }
 
+/* Estiliza a área do usuário no cabeçalho */
 .user {
     display: flex;
     align-items: center;
@@ -80,6 +88,7 @@ a:hover {
     height: 9vh;
 }
 
+/* Estiliza o bloco do computador */
 .blocoComputador {
     display: flex;
     padding: 0;
@@ -94,9 +103,8 @@ a:hover {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-/*  background-color: #F5F5F5;
-    color: #002148; */
 
+/* Estiliza o bloco do funcionário */
 .blocoFuncionario {
     display: flex;
     padding: 0;
@@ -112,6 +120,7 @@ a:hover {
     border-bottom-right-radius: 15px;
 }
 
+/* Estiliza o bloco de software */
 .bloco-SW {
     background-color: #002148;
     color: #E7ECEF;
@@ -123,6 +132,7 @@ a:hover {
     align-items: center;
 }
 
+/* Estiliza a logo dentro do bloco de software */
 .logo {
     top: -140px;
     height: 30%;
@@ -133,11 +143,13 @@ a:hover {
     margin-bottom: 30px;
 }
 
+/* Estiliza a imagem dentro do bloco de software */
 .bloco-SW img {
     height: 376px;
     width: 378px;
 }
 
+/* Estiliza o parágrafo dentro do bloco de software */
 .bloco-SW p {
     font-size: 24px;
     color: #bebebe;
@@ -145,6 +157,7 @@ a:hover {
     margin-bottom: 2px;
 }
 
+/* Estiliza o botão de entrar */
 .botao-entrar {
     margin-top: 16px;
     padding: 10px 50px;
@@ -162,6 +175,7 @@ a:hover {
     background-color: #CAD5E0;
 }
 
+/* Estiliza a sessão de cadastro */
 .sessao-cadastro {
     width: 50%;
     padding: 40px;
@@ -171,6 +185,7 @@ a:hover {
     align-items: center;
 }
 
+/* Estiliza o container do formulário */
 .form-container {
     margin-top: 15%;
     width: 100%;
@@ -181,6 +196,7 @@ a:hover {
     background-color: #002148;
 }
 
+/* Estiliza o cabeçalho dentro do formulário */
 h1 {
     font-size: 24px;
     color: #E7ECEF;
@@ -188,6 +204,7 @@ h1 {
     text-align: center;
 }
 
+/* Estiliza o campo de entrada */
 .input-field {
     margin-bottom: 30px;
     position: relative;
@@ -229,6 +246,7 @@ h1 {
     border: 2px solid #002148;
 }
 
+/* Estiliza o botão de cadastrar */
 .botao-cadastrar {
     width: 100%;
     padding: 10px;
